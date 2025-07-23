@@ -229,27 +229,6 @@ async def health():
 
 
 if __name__ == '__main__':
-    print("Starting LangGraph Human-in-the-Loop Quart Application...")
-    print("\nThis app demonstrates LangGraph's interrupt() function for human input")
-    print("\nAPI Endpoints:")
-    print("POST /chat - Main chat endpoint")
-    print("  - Start: {\"command\": \"start\"}")
-    print("  - Resume: {\"command\": \"resume\", \"thread_id\": \"<id>\", \"user_input\": \"<input>\"}")
-    print("GET /threads/<thread_id>/state - Get thread state")
-    print("GET /health - Health check")
-    
-    print("\nExample usage:")
-    print("1. Start conversation:")
-    print("   curl -X POST http://localhost:5000/chat \\")
-    print("        -H 'Content-Type: application/json' \\")
-    print("        -d '{\"command\": \"start\"}'")
-    print()
-    print("2. Resume with user input (use thread_id from step 1):")
-    print("   curl -X POST http://localhost:5000/chat \\")
-    print("        -H 'Content-Type: application/json' \\")
-    print("        -d '{\"command\": \"resume\", \"thread_id\": \"<thread_id>\", \"user_input\": \"Hello World\"}'")
-    print()
-    print("3. Check thread state:")
-    print("   curl http://localhost:5000/threads/<thread_id>/state")
-    
+    print("Starting LangGraph Human-in-the-Loop Quart Application (Zero Shot Agent)...")
+    print("See README.md for usage instructions and examples.")
     app.run(debug=True, host='0.0.0.0', port=5000)
