@@ -1,0 +1,7 @@
+research:
+  description: "Research the topic: {topic}. Your research should cover: 1. Key facts and statistics about the topic 2. Current trends or developments 3. Different perspectives or viewpoints 4. Practical applications or examples. Use the search_web function to find recent, relevant, and credible information. Provide a comprehensive summary of your findings."
+  expected_output: "A detailed research summary with key findings, facts, and insights about the topic."
+
+write_blog:
+  description: "Write a short, engaging blog post about: {topic}. Requirements: - Word count: approximately {word_count} words - Engaging introduction that hooks the reader - Clear, well-structured content with subheadings - Practical insights or actionable takeaways - Professional yet conversational tone - Include relevant examples or case studies - End with a compelling conclusion. Use the research provided to create accurate, informative content. Make the content accessible to a general audience while maintaining depth."
+  expected_output: "A well-written blog post of approximately {word_count} words with proper structure and engaging content." 
